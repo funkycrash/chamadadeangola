@@ -1,0 +1,322 @@
+body {
+	top: 0;
+ 	margin: 0;
+	/*background-color: white;*/
+	 background-color: #f1f1f1;
+}
+
+/****************************************\
+/*
+/*				H E A D E R
+/*
+/****************************************/
+
+header{
+	top: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	background-color: #fde001;
+}
+
+/** TOP HEADER **/
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.capo {
+	font-size: 1.5vw;
+	letter-spacing: 0.5vw;
+	margin-left: 41%;
+	font-family: andale mono, monospace;
+	font-weight:bold;
+	color: #50ab26;
+
+}
+
+/** MENU **/
+
+.menu {
+   display: inline-block;
+    
+}
+
+.undermenu{
+	display: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #50ab26;
+    background-color: #fde001;
+    text-align: center;
+}
+
+li:hover .undermenu {
+	display: block;
+	border-top: 1px solid  #50ab26;
+	background-color: /*rgb(255,255,255, 0.8);*/rgb(255, 250, 214, 0.95);
+	position: absolute;
+	padding: 0px;
+	z-index: 1000000;
+}
+
+.undermenu li a {
+	border-bottom: 0.1px solid  #50ab26;
+	text-align: left;
+	color: black;
+	padding: 1vw 1vw;
+	font-size: 1vw;
+}
+
+ nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    color: black;
+    font-family: andale mono, monospace;
+    padding: 1vh 1vw;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #50ab26;
+}
+
+/****************************************\
+/*
+/*				C O R E
+/*
+/****************************************/
+
+#corps {
+  padding: 16px;
+  /*background-color: grey;*/
+}
+
+#corps2 {
+  padding-left: 10%;
+  /*background-color: grey;*/
+}
+
+.content {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.partenaire_block{
+	padding-bottom: 15%;
+}
+
+.content_partenaire {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content_partenaire img{
+	width: 15%;
+}
+
+h1{
+	/*background-color: green;*/
+	font-family: andole mono, monospace;
+	font-size: 2.5vw;	
+	color: #50ab26;
+	margin-top: 6%;
+	margin-bottom: 6%;
+	margin-left: 10%;
+}
+
+h2{
+	/*background-color: white;*/
+	font-family: andale mono;
+	font-size: 2vw;
+	color: black;
+	margin-left: 10%;
+	
+	text-align: justify;	
+	line-height: 210%;
+	font-weight: normal;
+}
+
+/*class7*/
+h3{
+	color: #336600;
+	font-family: Arial;
+	font-size: 1.2vw;
+	font-weight: bold;
+
+	width: 80%;
+	margin-left: 10%;
+	/*line-height: 190%;*/
+	/*background-color: pink;*/
+}
+
+
+	
+
+.text {
+	font-family: Arial;
+	font-size: 1.2vw;
+	line-height: 210%;
+}
+
+.text-bolt{
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 1.2vw;
+	line-height: 210%;	
+}
+
+.text8 {
+	font-family: Arial;
+	font-size: 1.2vw;
+
+	width: 80%;
+	margin-left: 10%;
+
+	text-align: justify;
+	color: black;
+	line-height: 210%;
+}
+
+/****************************************\
+/*
+/*				P I C T U R E
+/*
+/****************************************/
+
+.pic_float {
+	float: left;
+	margin-right: 5%;
+	margin-bottom: 2%;
+	width: 30%;	
+}
+
+/* acceuil picture */
+
+.row_acceuil {
+	margin-left: 10%;
+  	display: flex;
+  	flex-wrap: wrap;
+  	padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column_acceuil {
+  flex: 25%;
+  max-width: 44%;
+  padding: 0 4px;
+}
+
+.column_acceuil img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column_acceuil {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+ Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+@media screen and (max-width: 600px) {
+  .column_acceuil {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.pic_acceuil{
+	width: 100%;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 15%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content_genealogie {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* BUG avec le sticky menu*/
+/*@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+}*/
+
+/****************************************\
+/*
+/*				P R E S S E
+/*
+/****************************************/
+
+
+/****************************************\
+/*
+/*				S T I C K Y
+/*
+/****************************************/
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+  background-color: red;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+/****************************************\
+/*
+/*				F O O T E R
+/*
+/****************************************/
+
+.footer_ul{
+	text-align: center;
+	width: 100%;
+}
+
