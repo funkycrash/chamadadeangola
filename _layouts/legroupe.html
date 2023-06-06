@@ -251,7 +251,7 @@ A l’Île Saint-Denis (93), depuis 1993, nous avons développé un travail aupr
 <!-- ---------- -->
     <h1>Élève</h1>
  
-{% assign eleveByPriority = site.eleve | sort:"priority" | reverse %} 
+{% assign eleveByPriority = site.eleve | sort:"ordre" %} 
 {% for eleve in eleveByPriority %}
 <div id="corps">
     <div id="{{eleve.nom}}">
