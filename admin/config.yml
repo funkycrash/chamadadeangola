@@ -43,8 +43,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: Title, name: title, widget: string, tagname: h1 }
-      - { label: Display Title, name: displayTitle, widget: boolean }
+      - { label: Nom, name: nom, widget: string }
+      - { label: Bio, name: bio, widget: markdown }
       - {
           label: Priority,
           name: priority,
@@ -54,10 +54,9 @@ collections:
           max: 1000,
           step: 1,
         }
-      - { label: "Vimeo Permalink", name: permalink, widget: string }
       - {
-          label: "Thumbnail Image",
-          name: thumbnailImage,
+          label: "Photo",
+          name: photo,
           description: "must be 480x360",
           widget: image,
           default: /assets/img/uploads/default-thumbnail.jpg,

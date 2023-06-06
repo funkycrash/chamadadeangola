@@ -264,6 +264,22 @@ A l’Île Saint-Denis (93), depuis 1993, nous avons développé un travail aupr
         <p style="clear: both;"></p>
     </div>
 </div>
+ 
+{% assign eleveByPriority = site.eleve | sort:"priority" | reverse %} 
+{% for eleve in eleveByPriority %}
+<div id="corps">
+    <div id="{{eleve.nom}}">
+        <h2>{{eleve.nom}}</h2>
+    </div>
+    <div id="corps">
+        <p class="text8">
+            <img src="{{ eleve.photo }}" class="pic_float"/>
+            {{eleve.bio}}
+         </p>
+        <p style="clear: both;"></p>
+    </div>
+</div>
+{% endfor %}
 
 <!-- ---------- -->
 <!-- ANCRE 4    -->
