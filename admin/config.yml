@@ -59,6 +59,7 @@ collections:
           name: photo,
           description: "must be 480x360",
           widget: image,
+          required: false
         }
   - label: Contenu
     name: contenu

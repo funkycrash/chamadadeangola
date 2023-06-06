@@ -257,13 +257,17 @@ A l’Île Saint-Denis (93), depuis 1993, nous avons développé un travail aupr
     <div id="{{eleve.nom}}">
         <h2>{{eleve.nom}}</h2>
     </div>
-    <div id="corps">
-        <p class="text8">
+    <div id="corps" style="font-family: Arial;
+    font-size: 1.2vw;
+    width: 80%;
+    margin-left: 10%;
+    text-align: justify;
+    color: black;
+    line-height: 210%;">
             {% if eleve.photo %}
                 <img src="{{ eleve.photo }}" class="pic_float"/>
             {% endif %}
             {{eleve.bio | markdownify}}
-         </p>
         <p style="clear: both;"></p>
     </div>
 </div>
