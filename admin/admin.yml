@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: funkycrash/chamadadeangola
-  branch: master
+  branch: main
 media_folder: assets/img/uploads
 webp:
   enabled: true
