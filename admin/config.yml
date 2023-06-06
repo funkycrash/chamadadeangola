@@ -72,5 +72,6 @@ collections:
           fields:
             [
               { label: Horaires, name: horaires, widget: markdown },
+              { label: Tarifs, name: tarifs, widget: markdown },
             ],
         }

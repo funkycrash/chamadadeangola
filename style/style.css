@@ -185,6 +185,13 @@ h3{
 	color: black;
 	line-height: 210%;
 }
+p {
+	font-family: Arial;
+	font-size: 1.2vw;
+	text-align: justify;
+	color: black;
+	line-height: 210%;
+}
 
 /****************************************\
 /*
