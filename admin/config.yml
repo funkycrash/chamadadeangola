@@ -41,7 +41,7 @@ collections:
     label: Eleve
     folder: _eleve
     create: true
-    slug: "{{slug}}"
+    slug: "{{nom}}"
     fields:
       - { label: Nom, name: nom, widget: string }
       - { label: Bio, name: bio, widget: markdown }
@@ -59,7 +59,6 @@ collections:
           name: photo,
           description: "must be 480x360",
           widget: image,
-          default: /assets/img/uploads/default-thumbnail.jpg,
         }
   - label: Contenu
     name: contenu

@@ -249,21 +249,7 @@ A l’Île Saint-Denis (93), depuis 1993, nous avons développé un travail aupr
 <!-- ---------- -->
 <!-- ANCRE 3    -->
 <!-- ---------- -->
- <div id="corps">
     <h1>Élève</h1>
-    <div id="groupe_samba">
-        <h2>Samba</h2>
-    </div>
-    <div id="corps">
-        <h3>Né le 7 Mars 1989 à Dakar, Sénégal..</h2>
-        <p  class="text8" ><img src="../ressources/samba.jpg" class="pic_float"/>
-            Samba, Edouard Calippe. Il a commencé la capoeira avec Maître Paulo Boa-Vida depuis l’âge de 7 ans.
-            Parallèlement à sa pratique de la capoeira, il fait du théâtre, cinéma, écrit du rap et dessine.
-            Il est également créateur d’une marque de vêtement dans le cadre du commerce équitable avec son école (le lycée de la solidarité international.)
-        </p>
-        <p style="clear: both;"></p>
-    </div>
-</div>
  
 {% assign eleveByPriority = site.eleve | sort:"priority" | reverse %} 
 {% for eleve in eleveByPriority %}
@@ -273,8 +259,10 @@ A l’Île Saint-Denis (93), depuis 1993, nous avons développé un travail aupr
     </div>
     <div id="corps">
         <p class="text8">
-            <img src="{{ eleve.photo }}" class="pic_float"/>
-            {{eleve.bio}}
+            {% if eleve.photo %}
+                <img src="{{ eleve.photo }}" class="pic_float"/>
+            {% endif %}
+            {{eleve.bio | markdownify}}
          </p>
         <p style="clear: both;"></p>
     </div>
