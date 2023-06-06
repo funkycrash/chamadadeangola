@@ -41,7 +41,7 @@ collections:
     label: Eleve
     folder: _eleve
     create: true
-    slug: "{{nom}}"
+    slug: "{{slug}}"
     fields:
       - { label: Nom, name: nom, widget: string }
       - { label: Bio, name: bio, widget: markdown }
