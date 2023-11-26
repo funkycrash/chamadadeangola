@@ -3,16 +3,10 @@ layout: default
 ---
 <h1>Qui est Mestre Paulo Boa-Vida ?</h1>
 <div  class="content">
-    <p  class="text"><img src="/ressources/Boavida.jpg" class="pic_float"/>Paulo Boa-Vida est maître de capoeira, comédien et metteur en scène. Il est formé en Education Somatique à Paris 8 et en Arts & Médiations Thérapeutiques à Paris Diderot. Il s’initie à la capoeira angola dès l’âge de 13 ans avec Maître Limão à São Paulo. Dans un deuxième temps, il devient disciple de Maître Garrincha, du groupe « Senzala », puis il sera formé maître par le Grand Maître Leopoldina. A présent il est lié au travail de maître Neco Pelourinho (Grupe So Angola) et membre de l’ACIMBA.<br/>
-
-    Parallèlement à sa pratique de la capoeira, il commence sa carrière théâtrale. Au début des années 80, il finit par intégrer le groupe théâtral du directeur Carlos Wilson . Il travaillera dix ans avec cette troupe et participera à plusieurs spectacles, comme comédien et assistant à la mise en scène. Le théâtre va le rapprocher d’un univers engagé politiquement dans ce Brésil encore pris dans les aléas de la dictature. Il commence à enseigner la capoeira à Rio de Janeiro à l’âge de 23 ans avec les enfants et adolescents dans les écoles et forme un groupe de recherche autour de la capoeira avec des comédiens.<br/>
-
-    En 1989, il vient enseigner la capoeira en Europe, à Paris, où il restera dix ans. La capoeira en France en était encore à ses débuts. Il crée l’association Macaques- Mouvement Culturel Brésilien- afin de divulguer son enseignement et de faire découvrir en France les aspects encore inconnus de la culture brésilienne. Il est un des pionniers de la capoeira en France où il a largement participé à son développement et sa divulgation. Il organise plusieurs stages et événements, dirige des spectacles, inaugure le travail de capoeira pour les enfants, les handicapés mentaux et les dépendants chimiques. Il a également développé un travail avec les autistes et les psychotiques de l’hôpital de jour Santos Dumont à Paris pendant deux ans et demi en collaboration avec l’association Turbulences.<br/>
-
-    Plusieurs stages et événements sont organisés sous sa direction en Europe, en Afrique et au Brésil avec ses élèves français. Ces Initiatives ont abouti, notamment, à la création du groupe « Africa Capoeira » établie au Sénégal et au Burkina Faso. Cet échange régulier avec l’Afrique, la France et le Brésil prolonge et approfondit le croisement culturel de ces trois continents historiquement liés.<br/>
-
-    Maître Paulo Boa-Vida a également travaillé avec plusieurs compagnies de théâtre et de cirque, notamment le Cirque Archaos, l’École de Théâtre de Bratislava en Slovaquie, le Théâtre Academy of Tampere en Finlande, Théâtre du Soleil, les Bouffes du Nord, avec la Compagnie du Griot de Sotigui Kouyaté et l’École des Sables de Germaine Acogny. Il propose aux artistes de cirque et comédiens un travail corporel à travers la capoeira qui leur est spécifiquement destiné. Il est également auteur de quelques articles parus dans la presse et certains livres de capoeira.<br/>
-
-    Après ces dix ans passés en France, il repart au Brésil de 2000 à 2007 et poursuit son travail autour des échanges « triangulaires » entre les trois continents par le biais de la capoeira et le théâtre. Depuis 2007, il est de retour à Paris où il continue le développement de son action. Actuellement il donne des cours à Paris, aux Lilas et continue à développer un travail auprès des handicapés menteaux. Il a aussi une action dans les EHPADs auprès des équipes soignantes.
+    <p  class="text">
+        {% if site.data.contenu.biopic %}
+            <img src="{{ site.data.contenu.biopic }}" class="pic_float"/>
+        {% endif %}
+        {{ site.data.contenu.bio | markdownify }}
     </p>
 </div>

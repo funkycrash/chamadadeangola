@@ -28,8 +28,8 @@ header{
 }
 
 .capo {
-	font-size: 1.5vw;
-	letter-spacing: 0.5vw;
+	font-size: 1.5em;
+	letter-spacing: 0.5em;
 	margin-left: 41%;
 	font-family: andale mono, monospace;
 	font-weight:bold;
@@ -71,8 +71,8 @@ li:hover .undermenu {
 	border-bottom: 0.1px solid  #50ab26;
 	text-align: left;
 	color: black;
-	padding: 1vw 1vw;
-	font-size: 1vw;
+	padding: 1em 1em;
+	font-size: 1em;
 }
 
  nav li a {
@@ -114,6 +114,10 @@ li a:hover {
 	padding-bottom: 15%;
 }
 
+#content-netlify h1 { 
+	margin-left: 0;
+}
+
 .content_partenaire {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -126,17 +130,17 @@ li a:hover {
 h1{
 	/*background-color: green;*/
 	font-family: andole mono, monospace;
-	font-size: 2.5vw;	
+	font-size: 2.5em;	
 	color: #50ab26;
-	margin-top: 6%;
-	margin-bottom: 6%;
-	margin-left: 10%;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	margin-left: 10%; 
 }
 
 h2{
 	/*background-color: white;*/
 	font-family: andale mono;
-	font-size: 2vw;
+	font-size: 2em;
 	color: black;
 	margin-left: 10%;
 	
@@ -149,7 +153,7 @@ h2{
 h3{
 	color: #336600;
 	font-family: Arial;
-	font-size: 1.2vw;
+	font-size: 1.2em;
 	font-weight: bold;
 
 	width: 80%;
@@ -163,20 +167,20 @@ h3{
 
 .text {
 	font-family: Arial;
-	font-size: 1.2vw;
+	font-size: 1.2em;
 	line-height: 210%;
 }
 
 .text-bolt{
 	font-family: Arial;
 	font-weight: bold;
-	font-size: 1.2vw;
+	font-size: 1.2em;
 	line-height: 210%;	
 }
 
 .text8 {
 	font-family: Arial;
-	font-size: 1.2vw;
+	font-size: 1.2em;
 
 	width: 80%;
 	margin-left: 10%;
@@ -187,7 +191,7 @@ h3{
 }
 p {
 	font-family: Arial;
-	font-size: 1.2vw;
+	font-size: 1.2em;
 	text-align: justify;
 	color: black;
 	line-height: 210%;
