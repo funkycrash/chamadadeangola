@@ -61,6 +61,32 @@ collections:
           widget: image,
           required: false
         }
+  - name: mestre
+    label: Mestre
+    folder: _mestre
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Nom, name: nom, widget: string }
+      - { label: Description, name: description, widget: string }
+      - { label: Subtitle, name: subtitle, widget: markdown }
+      - { label: Bio, name: bio, widget: markdown }
+      - {
+          label: Ordre,
+          name: ordre,
+          widget: number,
+          default: 0,
+          min: 0,
+          max: 1000,
+          step: 1,
+        }
+      - {
+          label: "Photo",
+          name: photo,
+          description: "must be 130x130",
+          widget: image,
+          required: true
+        }
   - label: Contenu
     name: contenu
     files:

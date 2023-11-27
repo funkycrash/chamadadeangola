@@ -33,211 +33,32 @@ layout: default
 <div id="corps2">
     <div class="row">
 
-        <div class="column">
-            <div class="content_genealogie">
-                <img src="../ressources/thumbnail/caicara.jpg" alt="caiçara" style="width: 100%;">
-                <h3>Caiçara</h3>
-                <p>  Il est né dans la ville mythique de Santo Amaro, à l’intérieur des terres bahianaises, lieu traditionnel des grandes capoeiras. <a href="#caicara_txt">plus</a> </p>
-            </div>
-        </div>
-
-
-        <div class="column">
-            <div class="content_genealogie">
-                <img src="../ressources/thumbnail/limao.jpg" alt="caiçara" style="width: 100%;">
-                <h3>Limao</h3>
-                <p>  Maitre Leopoldina est né le 12 février 1933 dans la banlieue de Rio de Janeiro, il est issu d’une famille pauvre. <a href="#limap_txt">plus</a></p>
-            </div>
-        </div>
-
-
-        <div class="column">
-            <div class="content_genealogie">
-                <img src="../ressources/thumbnail/leopoldina.jpg" alt="caiçara" style="width: 100%;">
-                <h3>Leopoldina</h3>
-                <p> Maitre Leopoldina est né le 12 février 1933 dans la banlieue de Rio de Janeiro, il est issu d’une famille pauvre. <a href="#leopoldina_txt">plus</a></p>
-            </div>
-        </div>
-
-
-        <div class="column">
-            <div class="content_genealogie">
-                <img src="../ressources/thumbnail/neco.jpg" alt="caiçara" style="width: 100%;">
-                <h3>Neco</h3>
-               <p> Maître Neco appartient à la première génération des maîtres formés par maître Moraes qui à son tour était ... <a href="#neco_txt">plus</a></p>
-            </div>
-        </div>
-
-
-        <div class="column">
-            <div class="content_genealogie">
-                <img src="../ressources/thumbnail/garrincha.jpg" alt="caiçara" style="width: 100%;">
-                <h3>Garrincha</h3>
-                <p>  Il est né en 1954 à Rio de Janeiro et a grandi dans une des favelas le plus « chaudes » de Rio de Janeiro. 
-       ... <a href="#garrincha_txt">plus</a></p>
-            </div>
-        </div>
-
+{% assign mestreByPriority = site.mestre | sort:"ordre" %} 
+{% for mestre in mestreByPriority %}
+<div class="column">
+    <div class="content_genealogie">
+        <img src="{{mestre.photo}}" alt="{{mestre.nom}}" style="width: 100%;">
+        <h3>{{mestre.nom}}</h3>
+        <p>{{mestre.description}} <a href="#{{mestre.nom}}">plus</a> </p>
     </div>
-
+</div>
+{% endfor %}
+    </div>
 </div>
 
 
+{% assign mestreByPriority = site.mestre | sort:"ordre" %} 
+{% for mestre in mestreByPriority %}
 <div id="corps">
-    <div id="caicara_txt">
-    <h2>Caiçara</h2>
-    <h3>Mestre Caiçaras – Antônio Conceição Moraes</h3>
-    <h3>1923- 1997</h3>
-    <div id="corps">
-        <p class="text8">
-        Il est né dans la ville mythique de Santo Amaro, à l’intérieur des terres bahianaises, lieu traditionnel des grandes capoeiras. Il était disciple de maître Caiçaras. Petit, il vendait des citrons « limão » dans les marchés de Salvador et après il filait voir les rodas de maître Caiçaras ainsi que celles d’autres maîtres dans le terreiro.
-        Dans les années soixante, avec beaucoup d’autres bahianais il migre vers le sud du Brésil. São Paulo était l’état qui a le plus accueilli cet exode où des milliers de « nordestinos » (gens du Nord-est du Brésil) ont migré vers des régions plus riches dans l’espoir d’avoir une meilleure condition de vie.
-        C’est cette génération de capoeiristes qui a implanté la capoeira dans le capital paulistana. Mâitre Ananias l’un de plus vieux maître toujours en vie, Maître Brasilia, Suassuna, Dirceu, Pinatti, Paulo Gomes, Joel, Silvestre (frére adoptif de Limão), Natanael sont quelques-uns des maîtres qui ont implanté la capoeira à São Paulo.
-<br> <br>
-        Il est intéressant de noter qu’à cette époque angoleiros et regionalistes travaillaient ensemble.
-        Les maîtres Suassuna et Brasilia ont ouvert une académia ensemble. Maître Limão et Pinnatti ont également en 1969 ouvert l’Associação de Capoeira São Bento Pequeno.
-        En effet il avait à cette époque un enthousiame, un certain élan « magique » de pouvoir créer et réaliser après tants d’années d’interdicton et marginalisation de la capoeira. Ce moment allait durer peu: en 1964 le coup d’état perpétré par les militaires brésiliens, ensouflé par la politique du ‘big stick’ américain, a implanté une grosse répression dans tout le pays. La presse, les libertés individuels et politiques ont été poursuivis, la dictature s »est installé et les rodas de rue ont été de nouveau interdites. C’est dans ce contexte que j’ai commencé à pratiquer la capoeira avec mâitre Limão dans son académie à São Paulo dans le quartier de Santo Amaro. (Ne pas confondre avec la ville où il est né, qui a le même nom)
-<br> <br>
-        Son académie était très simple :
-        un ‘sobrado’, une sorte de maison à deux étages, construction typique du début du XXe siècle. L’entrée donnait sur la rue et une escalier nous amenait directement dans le lieu d’entraînement. La première salle était reservée pour la musculation. Un deuxième espace à coté de cette salle était réservé à la roda, avec un cercle peint au sol. Il y avait encore un troisième espace destiné à l’entraînement avec trois petits cercles disposés au sol comme un triangle à l’envers. Ceci était conçu pour faciliter le travail de la “ginga”.
-<br> <br>
-        J’ai commencé la capoeira grâce à « Indio », Ronaldo.
-        Nous étions quatre garçons à s’être inscrit : Indio, Cachalote, Gilvan et moi.
-        J’avais entre 13 et 14 ans en 1973 et je ne savais pas du tout que la capoeira allait faire partie de ma vie au mois pour les trente années à venir. Je ne savais pas qui était vraiment Maître Limão, je ne connaissait pas sa célébrité ni son parcours d’angoleiro issue directement de la lignée bahianaise, de la génération d’or de la capoeira angola. Je ne connaissais pas non plus l’existence d’une autre capoeira et tous les enjeus historiques et politiques qui existait autour de ces deux styles.
-<br>
-        De temps en temps je rencontrais Limão au ‘Banza’ un lieu de restauration rapide dans le quartier du vieux Brooklin, zone sud de São Paulo. Il était toujours très calme, souriant, drôle à l’intérieur de son ‘poncho’ mexicain. Un jour j’ai appris qu’il était mort assassiné à l’intérieur de Bahia sa terre natale. Un coup de couteau a mis fin à ses jour. C’étai la fin d’un grand personnage de la capoeira. J’ai eu la chance de passé environ deux ans à ses cotés. Merci Maître Limão.
-
-        </p>
+    <div id="{{mestre.nom}}">
+    <h2>{{mestre.nom}}</h2>
+    {{mestre.subtitle | markdownify}}
+    <div id="content-netlify" class="content">
+       {{mestre.bio | markdownify}}
     </div>
 </div>
 </div>
-
- <div id="corps">
-    <div id="limap_txt">
-    <h2>Limao</h2>
-    <h3>Mestre Limão</h3>
-    <h3>Né à Santo Amaro.</h3>
-    <div id="corps">
-        <p class="text8">
-             Il est né dans la ville mythique de Santo Amaro, à l’intérieur des terres bahianaises, lieu traditionnel des grandes capoeiras. Il était disciple de maître Caiçaras. Petit, il vendait des citrons « limão » dans les marchés de Salvador et après il filait voir les rodas de maître Caiçaras ainsi que celles d’autres maîtres dans le terreiro.<br/>
-        Dans les années soixante, avec beaucoup d’autres bahianais il migre vers le sud du Brésil. São Paulo était l’état qui a le plus accueilli cet exode où des milliers de « nordestinos » (gens du Nord-est du Brésil) ont migré vers des régions plus riches dans l’espoir d’avoir une meilleure condition de vie.
-        C’est cette génération de capoeiristes qui a implanté la capoeira dans le capital paulistana. Mâitre Ananias l’un de plus vieux maître toujours en vie, Maître Brasilia, Suassuna, Dirceu, Pinatti, Paulo Gomes, Joel, Silvestre (frére adoptif de Limão), Natanael sont quelques-uns des maîtres qui ont implanté la capoeira à São Paulo.<br/>
-
-        Il est intéressant de noter qu’à cette époque angoleiros et regionalistes travaillaient ensemble.
-        Les maîtres Suassuna et Brasilia ont ouvert une académia ensemble. Maître Limão et Pinnatti ont également en 1969 ouvert l’Associação de Capoeira São Bento Pequeno.<br/>
-        En effet il avait à cette époque un enthousiame, un certain élan « magique » de pouvoir créer et réaliser après tants d’années d’interdicton et marginalisation de la capoeira. Ce moment allait durer peu: en 1964 le coup d’état perpétré par les militaires brésiliens, ensouflé par la politique du ‘big stick’ américain, a implanté une grosse répression dans tout le pays. La presse, les libertés individuels et politiques ont été poursuivis, la dictature s »est installé et les rodas de rue ont été de nouveau interdites. C’est dans ce contexte que j’ai commencé à pratiquer la capoeira avec mâitre Limão dans son académie à São Paulo dans le quartier de Santo Amaro. (Ne pas confondre avec la ville où il est né, qui a le même nom).<br/>
-
-        Son académie était très simple :<br/>
-        un ‘sobrado’, une sorte de maison à deux étages, construction typique du début du XXe siècle. L’entrée donnait sur la rue et une escalier nous amenait directement dans le lieu d’entraînement. La première salle était reservée pour la musculation. Un deuxième espace à coté de cette salle était réservé à la roda, avec un cercle peint au sol. Il y avait encore un troisième espace destiné à l’entraînement avec trois petits cercles disposés au sol comme un triangle à l’envers. Ceci était conçu pour faciliter le travail de la “ginga”.<br/>
-
-        J’ai commencé la capoeira grâce à « Indio », Ronaldo.
-        Nous étions quatre garçons à s’être inscrit : Indio, Cachalote, Gilvan et moi.
-        J’avais entre 13 et 14 ans en 1973 et je ne savais pas du tout que la capoeira allait faire partie de ma vie au mois pour les trente années à venir. Je ne savais pas qui était vraiment Maître Limão, je ne connaissait pas sa célébrité ni son parcours d’angoleiro issue directement de la lignée bahianaise, de la génération d’or de la capoeira angola. Je ne connaissais pas non plus l’existence d’une autre capoeira et tous les enjeus historiques et politiques qui existait autour de ces deux styles.<br/>
-
-        De temps en temps je rencontrais Limão au ‘Banza’ un lieu de restauration rapide dans le quartier du vieux Brooklin, zone sud de São Paulo. Il était toujours très calme, souriant, drôle à l’intérieur de son ‘poncho’ mexicain. Un jour j’ai appris qu’il était mort assassiné à l’intérieur de Bahia sa terre natale. Un coup de couteau a mis fin à ses jour. C’étai la fin d’un grand personnage de la capoeira. J’ai eu la chance de passé environ deux ans à ses cotés. Merci Maître Limão.
-        </p>
-    </div>
-</div>
-</div>
-        
-
- <div id="corps">
-    <div id="leopoldina_txt">
-    <h2>Leopoldina</h2>
-    <h3>Maître Leopoldina – Demerval Lopes de Lacerda</h3>
-    <h3>1933 – 2007</h3>
-    <div id="corps">
-        <p class="text8">
-       Maitre Leopoldina est né le 12 février 1933 dans la banlieue de Rio de Janeiro, il est issu d’une famille pauvre. Très tôt il a perdu sa mère et son père l’a abandonné. Il a donc été élevé par une tante qui le maltraitait et un jour il a pris fuite. Il a dormi dans la rue, a vendu des bonbons dans la station de train – Central do Brésil – qui fait référence à son surnom, surnom qu’il a gardé toute sa vie. En faits, à cette époque pour attirer l’attention des passagers, il imitait le son d’un train qui s’appelait Leopoldina. Il est passé par la maison de correction de l’enfance et l’adolescence – FUNABEM – et a passé quelques temps en taule avec son premier maître de capoeira Quinzinho.
-<br> <br>
-       Leopoldina a connu Quinzinho quand il avait 18 ans. Ils se sont rencontrés dans le morro (bidonville) de São Carlos au centre ville de Rio. Quinzinho, selon Leopoldina, boitait d’une jambe mais était très bon en rastera (balayage.) C’était un voyou, chef de gang qui a fini assassiné en prison. Ensuite, Leopoldina a connu un capoeiriste bahianais qui venait d’arriver de l’intérieur de Bahia, il se nommait Artur Emidio. Il était impressionné par sa rapidité et vite il a compris que c’était avec lui qu’il allait continuer son apprentissage.
-<br> <br>
-       Un jour Maître Artur l’a invité pour faire une démonstration avec lui et d’autres capoeiristes à Olaria, dans la banlieue de Rio. C’est à cette occasion qu’il a connu Carlos Bahiano Maluco, ce dernier a trouvé un boulot pour Leopoldina comme docker au quai du port de Rio. Cette rencontre a marqué la vie de Leopoldina à jamais. C’est à partir de cette roda d’exhibition que Leopoldina a commencé à rencontré les angoleiros de Rio, la majorité de ces gens venaient de la banlieue : Joel Lourenço, Kadu, Zé Ignorante, Dois de Ouro, Imagem do Cão, sont quelque uns des personnages dont il se souvient. Le quai du port, les malandrins et les rodas de dimanche ont constitué l’univers de Leopoldina, où il a évolué et s’est forgé sa personnalité et son charisme.
-<br> <br>
-       La scène de la capoeiragem carioca (typique, de Rio de Janeiro) dans les années 50 avait des illustres personnages : Maître Paraná, grand joueur de berimbau, d’ailleurs il fréquentait beaucoup l’Académie de Artur et est le fondateur du groupe São Bento Pequeno. Le grand Mario Buscapé ( Mario Santos) qui a connu Besouro, fondateur du Groupe Bomfim, maître de Zé Grande qui à son tour a formé maître Cabide. Le fameux Maître Sinhosinho qui était déjà un peu oublié à cette époque, faisait partie de cette élite de capoeiras des années 50 à Rio de Janeiro.
-<br> <br>
-       J’ai connu Leopoldina quand il fréquentait les rodas de maître Garrincha à la Puc – Université Catholique à Rio – et à la Maison de l’étudiant dans le quartier du Flamengo, ceci dans les débuts des années 80. Il arrivait très en douceur, sans aucune pression. Habillé avec un gilet, une grande chaine autour du cou avec une dent énorme de sanglier – protection contre les mauvais esprits, « mandingas » (sorcelleries), « muquiranices » (méchancetés) et d’autres pestilences. Il portait un chapeau coco, que je n’ai jamais vu tomber de sa tête. Quand il sentait l’atmosphère un peu lourde, il mettait son contre-egun (sorte de patua magique) pour ne vraiment rien laisser au hasard ! Il jouait avec tout le monde et chantait ses ladainhas, les plus belles que je n’ai jamais entendues ! Après la roda, on allait au bar, boire quelques bières, et lui buvait un soda. Comme un enfant. Je pense que cet esprit enfantin a préservé le vieux en beaucoup de moments difficiles de sa vie. Leopoldina avait une joie de vivre, un positivisme qu’il communiquait à tout le monde. C’est grâce à ce caractère qu’il a commencé à être connu, d’abord au Brésil et puis à l’étranger.
-<br>
-       Leopoldina a voyagé ce monde de Dieu d’un bout à l’autre : Nous avons été ensemble en Allemagne, en Hollande, au Sénégal et en France, chez moi, plusieurs fois. Mais, lui, il était toujours invité par des maîtres et des disciples, il a connu presque tous les pays de l’Europe Occidentale, les États-Unis, l’Australie et l’Indonésie. Dans tous ces lieux il était toujours le centre de l’attention. Ceci sans aucun effort, naturellement. Sa présence illuminait tout !
-<br> <br>
-       Quand nous avons été ensemble au Sénégal il a fait un énorme sucées. A Gorée les enfants allaient derrière lui, en file, à travers les rues de terre battue, ils étaient vingt, parfois trente enfants à le suivre pendant qu’il jouait de son berimbau comme le flutiste de Hamelin. Jamais je n’oublierais cette image : A Dakar, il a dragué une femme et moi j’ai été « choisi » pour traduire les galanteries de Leopoldina durant toute la nuit pendant que les autres gars se faufilait en douceur. Encore à Gorée, durant notre séjour, le maître était le dernier à se coucher et le premier à se lever. Quand je me réveillais dès qu’il entendait ma voix il s’approchait avec sa marche nonchalante et demandait son petit déjeuneur : bouillis d’avoine !
-<br> <br>
-       Dans la roda le maître n’était pas un « vaillant ». Il était fier de ne jamais avoir tapé personne. Je me souviens des divers jeux qu’il a faits où il montrait toute son habilité et le danger de son art sans jamais faire un acte de violence. Sans jamais commettre une bavure. Bien au contraire quand la roda était trop « chaude » il arrêtait le jeu et demandait du calme. C’est grâce à ses principes et d’autres qu’il est devenu, peut-être, le maître le plus populaire du Brésil et surement le plus aimé. Dans un autre contexte le maître a fait preuve de beaucoup de courage et de vaillance pour affronter sa maladie. J’ai vu Leopoldina s’étioler peu à peu à cause de son cancer de la prostate. Il a perdu plusieurs kilos. A subi trois chirurgies, a perdu le contrôle de la vessie et a dû utiliser une sonde. Même dans cet état de santé assez difficile j’ai vu Leopoldina rentrer, avec sa poche d’urine cachée sous son pantalon, dans une roda et jouer avec tout le monde. Le maître a perdu la santé mais pas la noblesse ! Quand je l’appelais de Paris pour avoir de ses nouvelles il me répondait : « Je vais mieux de ce que je le mérite »
-<br> <br>
-       Une fois quand j’étais chez lui à la Cité de Dieu, dans la zone ouest de Rio, devenu célèbre grâce au film du même nom, il est sorti avec moi à pied, à travers les labyrinthes des rues et ruelles de la fameuse cité. Partout où il passait il était salué : « Ça va maître ? », « Bonjour Maître », « Salut maître », « Leopoooooooldinaaa ! » Criait un autre. Et de temps en temps : « Salut Leozinho », disait une fille d’une voix toute douce. Alors Leopoldina faisait un sourire de toutes ses dents et disait : « Elle m’adore »
-<br> <br>
-       Ce même jour, il m’a dit qu’il allait dormir tôt par ce que le lendemain il allait à São Paulo (à 400 kilomètres de Rio). Il allait prendre sa bagnole « branchée » avec une grosse image d’aigle dessiné sur le capot et allait jouer la capoeira à la Place de la République, dans la plus grande capitale du Brésil. En faits, Leopoldina partait de temps en temps pour jouer à São Paulo dans cette célèbre roda, une des plus traditionnelles du Brésil avec celle de Caxias à Rio. Il disait que là-bas il était bien traité. Il me parlait du grand maître Ananias actuellement un des plus vieux maîtres encore en vie, de maître Meinha et d’autres dont je ne me rappelle plus.
-<br> <br>
-       Moi-même, en réalité, je n’ai pas été un élève du maître comme l’était maître Nestor. Je n’ai pas eu ce privilège d’avoir appris la dance des esclaves avec lui. Mais je sais aujourd’hui que le vieux, m’a appris énormément! Il m’a transmis tous ses enseignements de « malandragem », de « mandinga », de noblesse, de sagesse de vie, sans jamais avoir prétendu quoi que ce soit. C’est vrai que je n’ai pas été son élève, mais avec certitude j’étais son disciple. Je crois aussi que sa façon unique de véhiculer un savoir faisait aussi sa force : apprendre sans prétendre, apprendre sans rien dire, enseigner en silence, passer tout un art noble avec l’humilité d’un serf. « Ah maître, aujourd’hui je regrette de ne pas avoir été à la hauteur de ton enseignement. Je regrette, dans ma rusticité, de ne pas avoir su comprendre la finesse de ton savoir ».
-<br> <br>
-       Pendant les derniers temps le maître était un peu triste. Il disait qui les capoeristes de Rio ne le reconnaissait pas à sa juste valeur. Il disait qu’à São Paulo et même à Rio Grande do Sul il était plus aimé, plus reconnu qu’à Rio de Janeiro. C’est peut-être pour cela qu’il a choisi de mourir à São José dos Campos, intérieur de l’état de São Paulo, proche de celui qui pendant toute la période difficile du maître était à son côté comme un fils : maître Tinta Forte. Maître Tinta Forte a été à coté du maître dans les pires moments de sa vie. Lorsque son éclat visible était voilé, au moment où son humeur et ses petites blagues faisaient moins d’effet. Comme dit l’expression : « tout le monde est ami mais dans la douleur les parents sont les dents et encore ils nous mordent. »
-<br> <br>
-       La disparition de maître Leopoldina confirme la fin d’une époque qui a débuté avec la mort de maître Pastinha et de maître Bimba et qui a continué avec la presque totale disparition de tous les vieux maîtres angoleiros bahianais. Le décès de Leopoldina annonce que nous arrivons à la fin d’une époque des grands maîtres, des grands représentants et militants de la capoeira angola qui ont coexisté et sont partis. Leopoldina était un phare qui illuminait des milles et milles de noir dans la nuit et qui le 17 octobre 2007 s’est éteint pour toujours. Sa parole avait une résonance. Son intégrité nous assurait que la vie valait la peine d’être vécue. Nous avons encore quelques maîtres de cette génération vivants. Quelques résistants qui combattent encore et qui éclairent nos chemins de leurs présences. Mais un jour eux aussi partiront. Prions alors pour que les grands maîtres du futur soient aussi bons que ceux qui quand ils partent, nous laissent un peu plus orphelins et silencieux et en même temps ils nous rappellent que nous aussi sommes des mortels.
-<br> <br>
-       J’ai fait une petite « chula » pour Leopoldina :
-<br> <br>
-       Central do Brasil <br>
-       Sete horas da manhã <br>
-       O trem vem apitando <br>
-       Central do Brasil <br>
-       Leopoldina vem chegando <br>
-<br> <br>
-       Olha bala minha gente! <br>
-       Olha bala minha gente! <br>
-<br><br>
-       O Mestre Leopoldina <br>
-       Ele vai já em frente <br>
-<br> <br>
-       Olha bala minha gente! <br>
-       Olha bala minha gente! <br>
-<br> <br>
-       O Mestre Leopoldina <br>
-       Ele deixou agente… <br>
-<br> 
-       Mestre Leopoldina 12/02/1933 – 17/10/2007
-        </p>
-    </div>
-</div>
-</div>
-
- <div id="corps">
-<div id="neco_txt">
-    <h2>Neco</h2>
-    <h3>Maître Neco – Nivaldo de Siqueira Silva</h3>
-    <div id="corps">
-        <p class="text8">
-            Maître Neco appartient à la première génération des maîtres formés par maître Moraes qui à son tour était élève du Centre de Capoeira Angola dirigé par maître Pastinha. <br>
-            Il est à l’origine de la création, par maître Moraes, du Groupe de Capoeira Angola Pelourinho: GCAP à Rio de Janeiro. <br>
-            Dans un deuxième temps il a fondé son actuel Groupe So Angola. Depuis 2003 Maître Neco et Maître Boa-Vida font un partenariat à travers leurs respectifs groupes. <br>
-            Maître Neco Pelourinho est pour nous une référence dans notre parcours. <br>
-            Sa compétence, son savoir et son intégrité nous enrichit et nous enracine… 
-        </p>
-    </div>
-</div>
-</div>
-
- <div id="corps">
-<div id="garrincha_txt">
-        <h2>Garrincha</h2>
-        <h3>Maître Garrincha – Sergio Sacramento</h3>
-        <h3>Né en 1954 à Rio de Janeiro.</h3>
-    <div id="corps">
-
-        <p class="text8">
-            Il est né en 1954 à Rio de Janeiro et a grandi dans une des favelas le plus « chaudes » de Rio de Janeiro. <br>
-            Maître Garrincha a fait un « sacré » parcours dans sa vie.
-            Il a commence tôt la capoeira et dès l’âge de 11 ans il participe au fondement du groupe Senzala. <br>
-            En fait, ce groupe qui sort de la classe moyenne carioca adopte Garrincha et Sorriso (Maître Sorriso) deux enfants des bidonvilles de Rio dans leur groupe. <br>
-            Plus tard Garrincha se forme en Éducation Physique et devient un des grands maîtres de son époque. <br>
-            Très doué musicalement maître Garrincha sait mener une roda comme personne. <br>
-            J’ai était disciple de maître Garrincha durant longtemps.
-            Mais le temps ici perds son importance comparée à tout ce qu’il m’a apporté. <br>
-            Comme dit l’expression « le savoir c’est la seule richesse que plus on partage, plus elle nous enrichit » Je lui doit beaucoup.
-            On a dû se quitter à cause des « mouvements » de la vie mais il reste et restera toujours mon Maître. Maître Paulo Boa-Vida.
-        </p>
-    </div>
-</div>
-</div>
+{% endfor %}
 
 <!-- ---------- -->
 <!-- ANCRE 3    -->

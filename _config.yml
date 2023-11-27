@@ -38,3 +38,5 @@ plugins:
 collections:
   eleve:
     output: false
+  mestre:
+    output: false
