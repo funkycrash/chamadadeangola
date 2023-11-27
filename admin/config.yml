@@ -96,9 +96,16 @@ collections:
           file: _data/contenu.yml,
           fields:
             [
+              { label: Accueil, name: accueil, widget: markdown },
               { label: Horaires, name: horaires, widget: markdown },
               { label: Tarifs, name: tarifs, widget: markdown },
               { label: Bio, name: bio, widget: markdown },
-              { label: "Photo Bio", name: biopic, description: "doit être 480x360", widget: image, required: false }
+              { label: "Photo Bio", name: biopic, description: "doit être 480x360", widget: image, required: false },
+              { label: Histoire, name: histoire, widget: markdown },
+              { label: Handicap, name: handicap, widget: markdown },
+              { label: Historique, name: historique, widget: markdown },
+              { label: Creation, name: creation, widget: markdown },
+              { label: Pionniers, name: pionniers, widget: markdown },
+              { label: Macaques, name: macaques, widget: markdown },
             ],
         }
