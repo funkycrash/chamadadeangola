@@ -1,5 +1,5 @@
 ---
-nom: Samba
+nom: Samba Samba
 bio: >-
   ### Né le 7 Mars 1989 à Dakar, Sénégal..
 
